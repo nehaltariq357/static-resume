@@ -187,6 +187,31 @@ xl	1280px	@media (min-width: 1280px) { ... }
 
 /* for mobile */
 @media (max-width: 640px) {
+    .about-me {
+        max-width: 100%;
+        margin: 0 10px; 
+        font-size: 14px; 
+        text-align: center; 
+    }
+
+    .about-me h1 {
+        font-size: 20px; 
+        margin-bottom: 10px;
+    }
+
+    .about-me p {
+        font-size: 14px;
+        line-height: 1.4; 
+    }
+
+    .profile {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .profile img {
+        margin-bottom: 20px; 
+    }
     .container {
         width: 90%;
     }
