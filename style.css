@@ -348,8 +348,8 @@ xl	1280px	@media (min-width: 1280px) { ... }
     }
 
     .profile img {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 
     .about-me {
