@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <div class="container">
@@ -22,37 +24,69 @@
 
         <div class="main">
             <div class="left-section">
-                <h3>Contact</h3>
-                <p>Email: nehaltariq78@gmail.com</p>
-                <p>Phone: 0306-2512790</p>
-                <p>Location: Karachi, Pakistan</p>
+                
+                <h3>Contact <span><button onclick="toggle('contact-section')"><i class="fa-regular fa-eye-slash"></i></button></span></h3>
+                <div id="contact-section">
+                    <p>Email: nehaltariq78@gmail.com</p>
+                    <p>Phone: 0306-2512790</p>
+                    <p>Location: Karachi, Pakistan</p>
+                </div>
 
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>TypeScript</li>
-                </ul>
+                
+                <h3>Skills <span><button onclick="toggle('skills-section')"><i class="fa-regular fa-eye-slash"></i></button></span></h3>
+                <div id="skills-section">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
 
-                <h3>Languages</h3>
-                <ul>
-                    <li>English</li>
-                    <li>Urdu</li>
-                </ul>
+                
+                <h3>Languages <span><button onclick="toggle('languages-section')"><i class="fa-regular fa-eye-slash"></i></button></span></h3>
+                <div id="languages-section">
+                    <ul>
+                        <li>English</li>
+                        <li>Urdu</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="right-section">
-                <h3>Education</h3>
-                <p>Intermediate (2021-2023)</p>
-                <p>PECHS Education Foundation Govt Science Degree College</p>
-                <h3>Projects</h3>
-                <ul>
-                    <li>Blogging Website</li>
-                    <li>E-commerce Website</li>
-                    <li>Expense Tracker App </li>
-                </ul>
+                
+                <h3>Education <span><button onclick="toggle('education-section')"><i class="fa-regular fa-eye-slash"></i></button></span></h3>
+                <div id="education-section">
+                    <p>Intermediate (2021-2023)</p>
+                    <p>PECHS Education Foundation Govt Science Degree College</p>
+                </div>
+
+                
+                <h3>Projects <span><button onclick="toggle('projects-section')"><i class="fa-regular fa-eye-slash"></i></button></span></h3>
+                <div id="projects-section">
+                    <ul>
+                        <li>Blogging Website</li>
+                        <li>E-commerce Website</li>
+                        <li>Expense Tracker App</li>
+                    </ul>
+                </div>
+
+              
+                <h3>Work Experience <span>  <button onclick="toggle('work-section')"><i class="fa-regular fa-eye-slash"></i></button></span></h3>
+                <div id="work-section">
+                    <ul>
+                        <li>Web Developer</li>
+                        <li>Freelance Frontend Developer</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+       const toggle=(id)=>{
+      const section =  document.getElementById(id)
+      section.style.display = section.style.display === "none" ? "block":"none"
+       }
+    </script>
 </body>
 </html>
